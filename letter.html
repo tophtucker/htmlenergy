@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: fantasy; font-size: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Dear New York,</h1>
+        <p>Toph, having just moved (back) to Boston, has been worried (only a little) about what sort of HTML Energy he’d find here, and is grateful for this chance to bolster his faith in the future.</p>
+        <p>He is especially grateful to Leslie for feeling the <em>park</em> energy!</p>
+        <p>Dri, about to leave Boston & just reconnecting with HTML, is very grateful to have found HTML Energy today!</p>
+        <p>Katherine, new to Boston and loving it, is feeling HTML Energy in this Tatte tonight.</p>
+        <p>Katy is soaking up the html energy, having recently returned to Boston, which seems to have a lot of latent html energy and ~vibes~</p>
+        <p>Alicia, saying goodbye to boston and loving it more each day is really vibing with the corn today.</p>
+        <p>Leslie! Feeling a lot of ~~HTML energy~~ from the crew. <3 All the love.</p>
+        <footer>    
+            <p>With <span class="lots">lots</span> of love,</p>
+            <p>Boston</p>
+            <svg></svg>
+        </footer>
+        <script>
+        function growLove() {
+            const lots = document.querySelectorAll(".lots");
+            for (const lot of lots) {
+                const newLot = document.createElement("span");
+                newLot.innerHTML = " and lots";
+                newLot.classList.add("lots");
+                setTimeout(() => lot.appendChild(newLot), Math.random() * 1000);
+            }
+            setTimeout(growLove, 1000);
+        }
+        growLove();
+        </script>
+    </body>
+    </html>
